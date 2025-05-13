@@ -1,13 +1,19 @@
-  <style>
+
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f9f871; /* Light yellow background */
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
+
         header {
-            background-color: #3b82f6;
+            background-color: #ff6f61; /* Coral header */
             color: white;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         header .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -15,142 +21,205 @@
             justify-content: space-between;
             align-items: center;
         }
+
         header h1 {
-            font-size: 1.25rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 700; /* Use 700 for bold */
+            margin: 0;
+            transition: transform 0.2s ease;
         }
+
+        header h1:hover {
+            transform: scale(1.05);
+        }
+
         header nav ul {
             display: flex;
             list-style: none;
             margin: 0;
             padding: 0;
         }
+
         header nav ul li {
-            margin-left: 1rem;
+            margin-left: 1.5rem;
         }
+
         header nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
+
         header nav ul li a:hover {
-            color: #d9f99d;
+            color: #ffdb58; /* Yellow hover */
         }
+
         main {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 0;
+            padding: 3rem 0;
         }
+
         section {
             background-image: linear-gradient(to bottom right, #8b5cf6, #3b82f6);
             color: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 2.5rem 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
         section .md\:w-1\/2 {
             width: 50%;
         }
-        section h2 {
-            font-size: 1.875rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        section p {
-            font-size: 1rem;
-            line-height: 1.75rem;
-            text-align: center;
-        }
-        section form {
-            background-color: rgba(255, 255, 255, 0.6); /* Glassmorphism - more transparent*/
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* Softer shadow */
-            padding: 2rem;
-            width: 100%;
-            max-width: 400px; /* Added a max-width for the form */
-            backdrop-filter: blur(10px); /* Add blur to the background, stronger blur */
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Add a border */
 
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            margin-bottom: 2rem;
+            color: #eee;
+        }
+
+        section form {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 1rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 450px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
         section form h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 600;
             color: #4a5568;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
+
         section form .mb-4 label {
             display: block;
-            font-size: 0.875rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #4a5568;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
         }
+
+        section form .mb-4 label:hover {
+            color: #2d3748;
+        }
+
         section form .mb-4 input {
             width: 100%;
-            padding: 0.75rem;
-            border-radius: 0.375rem;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
             border: 1px solid #e2e8f0;
             box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.06);
             color: #4a5568;
-            font-size: 1rem;
+            font-size: 1.1rem;
             outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
+
         section form .mb-4 input:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+            border-color: #ff6f61;
+            box-shadow: 0 0 0 5px rgba(255, 111, 97, 0.3);
         }
 
         section form .mb-6 label {
             display: block;
-            font-size: 0.875rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #4a5568;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
         }
+
+        section form .mb-6 label:hover {
+            color: #2d3748;
+        }
+
         section form .mb-6 input {
             width: 100%;
-            padding: 0.75rem;
-            border-radius: 0.375rem;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
             border: 1px solid #e2e8f0;
             box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.06);
             color: #4a5568;
-            font-size: 1rem;
+            font-size: 1.1rem;
             outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
+
         section form .mb-6 input:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+            border-color: #ff6f61;
+            box-shadow: 0 0 0 5px rgba(255, 111, 97, 0.3);
         }
+
         section form button {
-            background-image: linear-gradient(to right, #34d399, #3b82f6);
-            color: white;
-            font-weight: 600;
-            padding: 0.75rem 1rem;
-            border-radius: 0.375rem;
+            background-image: linear-gradient(to right, #ffdb58, #ff6f61);
+            color: #333;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
             outline: none;
             cursor: pointer;
             width: 100%;
-            font-size: 1rem;
-            transition: background-image 0.3s ease;
+            font-size: 1.2rem;
+            transition: background-image 0.3s ease, transform 0.2s ease, color 0.3s ease;
             border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         section form button:hover {
-            background-image: linear-gradient(to right, #22c55e, #2563eb);
-        }
-        footer {
-            background-color: #4a5568;
+            background-image: linear-gradient(to right, #ffe57f, #ff4500);
+            transform: translateY(-5px);
             color: white;
-            padding: 1rem 0;
-            margin-top: 2rem;
         }
+
+        section form button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: #fff;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid #4a5568;
+        }
+
         footer .container {
             max-width: 1200px;
             margin: 0 auto;
-            text-align: center;
+            font-size: 1.1rem;
         }
 
         @media (min-width: 768px) {
@@ -158,16 +227,18 @@
                 flex-direction: row;
                 align-items: center;
                 text-align: left;
-                padding: 4rem 3rem;
+                padding: 5rem;
             }
+
             section h2 {
                 text-align: left;
             }
-            section p{
+
+            section p {
                 text-align: left;
             }
-            header h1{
-                font-size: 1.875rem;
+
+            header h1 {
+                font-size: 2.5rem;
             }
         }
-    </style>
