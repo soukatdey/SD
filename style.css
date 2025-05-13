@@ -1,0 +1,173 @@
+  <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3b82f6;
+            color: white;
+            padding: 1rem 0;
+        }
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin-left: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header nav ul li a:hover {
+            color: #d9f99d;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        section {
+            background-image: linear-gradient(to bottom right, #8b5cf6, #3b82f6);
+            color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        section .md\:w-1\/2 {
+            width: 50%;
+        }
+        section h2 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.75rem;
+            text-align: center;
+        }
+        section form {
+            background-color: rgba(255, 255, 255, 0.6); /* Glassmorphism - more transparent*/
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px; /* Added a max-width for the form */
+            backdrop-filter: blur(10px); /* Add blur to the background, stronger blur */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Add a border */
+
+        }
+        section form h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        section form .mb-4 label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        section form .mb-4 input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.375rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+            color: #4a5568;
+            font-size: 1rem;
+            outline: none;
+        }
+        section form .mb-4 input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        section form .mb-6 label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        section form .mb-6 input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.375rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+            color: #4a5568;
+            font-size: 1rem;
+            outline: none;
+        }
+        section form .mb-6 input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        section form button {
+            background-image: linear-gradient(to right, #34d399, #3b82f6);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            outline: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-image 0.3s ease;
+            border: none;
+        }
+        section form button:hover {
+            background-image: linear-gradient(to right, #22c55e, #2563eb);
+        }
+        footer {
+            background-color: #4a5568;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                flex-direction: row;
+                align-items: center;
+                text-align: left;
+                padding: 4rem 3rem;
+            }
+            section h2 {
+                text-align: left;
+            }
+            section p{
+                text-align: left;
+            }
+            header h1{
+                font-size: 1.875rem;
+            }
+        }
+    </style>
